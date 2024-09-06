@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wlcome to our school</title>
+  </head>
+  <style>
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+    }
+    .left {
+      align-self: center;
+      margin-left: 34px;
+      background-color: black;
+      padding: 4px 10px;
+      border-radius: 10px;
+    }
+    .mid .navbar {
+      display: flex;
+      list-style: none;
+    }
+    .right {
+      align-self: center;
+      margin-right: 34px;
+    }
+
+
+
+
+    body {
+      color: white;
+      margin: 0px;
+      padding: 0px;
+      background: url('21635.jpg') no-repeat center center/cover;
+    }
+    /* .left {
+      position: absolute;
+      display: inline-block;
+      top: 22px;
+      left: 34px;
+      border: 2px solid black;
+      padding: 4px 6px;
+      background-color: black;
+      border-radius: 10px;
+      cursor:default;
+    }
+    .mid{
+      display: block;
+      width: 36%;
+      margin: 23px auto;
+    } */
+    .navbar li a:hover {
+      text-decoration: underline;
+      color: rgb(10, 10, 10);
+      cursor: default;
+    }
+    /* .right {
+      position: absolute;
+      display: inline-block;
+      top: 22px;
+      right: 34px;
+    } */
+    .navbar li {
+      display: inline-block;
+
+      /* Or Write This */
+      /* float: left; */
+      /* list-style: none; */
+
+      font-size: 15px;
+    }
+    .navbar li a {
+      color: white;
+      text-decoration: none;
+      padding: 15px;
+    }
+    .btn {
+      color: white;
+      border: 2px solid black;
+      background-color: black;
+      border-radius: 10px;
+      padding: 4px 6px;
+      margin: 0px 9px;
+      font-size: 14px;
+    }
+    .container {
+      border: 2px solid black;
+      display: block;
+      color: black;
+      margin: 106px 80px;
+      padding: 75px;
+      width: 34%;
+      border-radius: 30px;
+    }
+    .container h1 {
+      text-align: center;
+    }
+    .form-grp input {
+      display: block;
+      text-align: center;
+      border: 2px solid black;
+      border-radius: 8px;
+      width: 508px;
+      margin: 20px auto;
+      padding: 5px;
+    }
+    .container button {
+      display: block;
+      width: 521px;
+      margin: auto;
+    }
+    .hy:hover {
+      color: black;
+      background-color: white;
+      border: none;
+    }
+    .container button:hover{
+      background-color: white;
+      color: black;
+    }
+  </style>
+  <body>
+    <header class="header">
+      <div class="left hy">left</div>
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Fitness calculator</a></li>
+          <li><a href="#">contact us</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <button class="btn hy">Call us</button>
+        <button class="btn hy">Email us</button>
+      </div>
+    </header>
+    <div class="container">
+      <h1>Join to our school!</h1>
+      <form action="soumen.php">
+        <div class="form-grp">
+          <input type="text" placeholder="Enter Your Nmae" />
+        </div>
+        <div class="form-grp">
+          <input type="number" placeholder="Enter Your Age" />
+        </div>
+        <div class="form-grp">
+          <input type="text" placeholder="Enter Your Gender" />
+        </div>
+        <div class="form-grp">
+          <input type="text" placeholder="Enter your Goal" />
+        </div>
+      </form>
+      <button class="btn">Submit</button>
+    </div>
+  </body>
+</html>
